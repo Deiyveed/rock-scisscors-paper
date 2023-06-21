@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div id="home" class="screen">
+            <h1>Rock Paper Scissors Game</h1>
+            <div id="login-form">
+                <p>Please Enter a Username to Play:</p>
+                <input type="text" id="username" placeholder="Enter your username" minlength="4">
+                <button onclick="login()">Play Game</button>
+            </div>
+        </div>
+
+        <div id="game" class="screen">
+            <h2 id="welcome-message"></h2>
+            <div id="options">
+                <button id="play" onclick="playGame('rock')">Rock</button>
+                <button id="play" onclick="playGame('paper')">Paper</button>
+                <button id="play" onclick="playGame('scissors')">Scissors</button>
+            </div>
+            <div id="player"></div>
+            <div id="computer"></div>
+            <div id="result"></div>
+            <div id="buttons">
+                <button id="back" onclick="goBack()">Go Back</button>
+                <button id="back" onclick="quitGame()">Quit</button>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
